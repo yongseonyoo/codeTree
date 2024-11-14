@@ -6,3 +6,6 @@ for i in range(1, n):
         n_sum += i
         if n_sum == n:
             print('P')
+
+if n_sum != n:
+    print('N')
