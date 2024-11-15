@@ -4,4 +4,5 @@ for i in range(1,101):
     if age >= 30:
         print(f"{prob/(i-1):.2f}")
         break
-    prob += age
+    else:
+        prob += age
