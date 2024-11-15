@@ -1,8 +1,10 @@
 prob = 0
-for i in range(1,101):
+cnt = 0
+while True:
     age = int(input())
     if age >= 30:
-        print(f"{prob/(i-1):.2f}")
+        print(f"{prob/cnt:.2f}")
         break
     else:
         prob += age
+        cnt += 1
