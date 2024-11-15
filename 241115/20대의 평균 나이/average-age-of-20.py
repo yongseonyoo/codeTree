@@ -10,4 +10,4 @@ while True:
             prob += age
             cnt += 1
     except:
-        break
+        continue
