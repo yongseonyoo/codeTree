@@ -1,4 +1,4 @@
-for i in range(3):
-    for j in range(5):
-        print(1, end="")
-    print()
+n = int(input())
+
+for i in range(n):
+    print("*" * n)
