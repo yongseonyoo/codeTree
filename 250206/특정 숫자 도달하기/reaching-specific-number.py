@@ -14,4 +14,4 @@ for j in num_list:
 
 mean = add / len(num_list)
 
-print(add, mean)
+print(f"{add} {mean:.1f}")
