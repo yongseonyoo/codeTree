@@ -3,7 +3,7 @@ arr = input().split()
 num_list = list()
 for i in arr:
     i = int(i)
-    if i >= 260:
+    if i >= 250:
         break
     else:
         num_list.append(i)
