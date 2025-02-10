@@ -8,5 +8,6 @@ for i in range(len(arr)):
                 print(j+3, end=' ')
             else:
                 print(j//2, end=' ')
+        break
     else:
         val.append(arr[i])
