@@ -11,4 +11,4 @@ for i in range(1, len(arr)+1):
         multi_cnt += 1
 
 multi_mean = multi_val / multi_cnt
-print(even_val, multi_mean)
+print(f"{even_val} {multi_mean:.1f}")
