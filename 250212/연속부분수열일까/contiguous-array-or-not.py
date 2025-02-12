@@ -20,8 +20,9 @@ else:
             
             cnt = 0
             for k in range(n2):
-                if a_list[k] == b[k]:
-                    cnt += 1
+                if len(a_list) >= len(b):
+                    if a_list[k] == b[k]:
+                        cnt += 1
                 else:
                     cnt = 0
             # print(cnt)
