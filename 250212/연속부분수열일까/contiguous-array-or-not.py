@@ -28,5 +28,5 @@ else:
             if cnt == n2:
                 print('Yes')
                 break
-            else:
-                print('No')
+            
+            print('No')
