@@ -15,6 +15,8 @@ for i in range(q):
             if a2 == tar:
                 print(arr_2.index(a2) + 1)
                 break
+        if tar not in arr_2:
+            print(0)
     elif num == 3:
         s = arr_3[1]
         e = arr_3[2]
