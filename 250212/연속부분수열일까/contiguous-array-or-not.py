@@ -9,6 +9,7 @@ b = list(map(int, input().split()))
 if b[0] not in a:
     print('No')
 else:
+    result = []
     for i in range(n1):
         if a[i] == b[0]:
             a_list = []
@@ -26,7 +27,12 @@ else:
             # print(cnt)
             
             if cnt == n2:
-                print('Yes')
+                result.append('Yes')
                 break
-            
-            print('No')
+            else:
+                result.append('No')
+    
+    if 'Yes' in result:
+        print('Yes')
+    else:
+        print('No')
