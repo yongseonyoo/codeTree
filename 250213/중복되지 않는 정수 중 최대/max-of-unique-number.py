@@ -15,7 +15,7 @@ while True:
     nums.pop(nums.index(max_val))
     if max_val in nums:
         nums.pop(nums.index(max_val))
-    else:
+    elif max_val not in nums:
         print(max_val)
         break
     
