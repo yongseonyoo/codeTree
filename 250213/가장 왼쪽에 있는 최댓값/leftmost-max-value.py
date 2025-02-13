@@ -2,7 +2,7 @@ n = int(input())
 a = list(map(int, input().split()))
 
 # Write your code here!
-cnt = a[-1]
+cnt = n
 for _ in range(10):
     max_val = 0
     for i in range(cnt):
