@@ -3,7 +3,7 @@ a = list(map(int, input().split()))
 
 # Write your code here!
 cnt = n
-for _ in range(10):
+for _ in range(1000):
     max_val = 0
     for i in range(cnt):
         if max_val < a[i]:
