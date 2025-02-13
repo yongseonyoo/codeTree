@@ -2,7 +2,7 @@ n = int(input())
 a = list(map(int, input().split()))
 
 # Write your code here!
-min_val = 100
+min_val = 2**31-1
 for i in range(n):
     if min_val > a[i]:
         min_val = a[i]
