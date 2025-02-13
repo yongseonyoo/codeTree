@@ -14,5 +14,7 @@ if max_val not in a:
     for j in range(n-1):
         if max_two < a[j]:
             max_two = a[j]
+else:
+    max_two = max_val
 
 print(max_val, max_two)
