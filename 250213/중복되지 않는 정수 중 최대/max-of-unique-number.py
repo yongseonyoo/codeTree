@@ -12,16 +12,22 @@ while True:
         if max_val < i:
             max_val = i
 
-    # nums.pop(nums.index(max_val))
-    nums.remove(max_val)
-    if max_val in nums:
-        # nums.pop(nums.index(max_val))
-        nums.remove(max_val)
-        if max_val in nums:
-            nums.remove(max_val)
-    elif max_val not in nums:
+    cnt = 0
+    for j in nums:
+        if j == max_val:
+            cnt += 1
+
+    if max_val not in nums:
         print(max_val)
         break
+    else:
+        if cnt == 1:
+            print(max_val)
+            break
+        else:
+            for k in range(cnt):
+                nums.remove(max_val)
+
     
     if len(nums) == 0:
         print(-1)
