@@ -2,7 +2,7 @@ n = int(input())
 a = list(map(int, input().split()))
 
 # Write your code here!
-max_val = 0
+max_val = -2**31-1
 for i in range(n):
     if max_val < a[i]:
         max_val = a[i]
