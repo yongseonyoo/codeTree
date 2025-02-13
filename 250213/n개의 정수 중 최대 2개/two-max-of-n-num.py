@@ -9,7 +9,7 @@ for i in range(n):
 
 a.pop(a.index(max_val))
 
-max_two = 0
+max_two = -2**31-1
 if max_val not in a:
     for j in range(n-1):
         if max_two < a[j]:
