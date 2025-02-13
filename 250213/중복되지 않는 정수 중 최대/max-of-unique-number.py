@@ -8,9 +8,9 @@ while True:
     else:
         break
 
-    for i in range(len(nums)):
-        if max_val < nums[i]:
-            max_val = nums[i]
+    # for i in range(len(nums)):
+    #     if max_val < nums[i]:
+    #         max_val = nums[i]
     for i in nums:
         if max_val < i:
             max_val = i
