@@ -2,17 +2,23 @@ n = int(input())
 nums = list(map(int, input().split()))
 
 # Write your code here!
-max_val = nums[0]
-for i in range(n):
-    if max_val < nums[i]:
-        max_val = nums[i]
+while True:
+    if len(nums) > 0:
+        max_val = nums[0]
+    else:
+        break
 
-cnt = 0
-for num in nums:
-    if num == max_val:
-        cnt += 1
+    for i in range(len(nums)):
+        if max_val < nums[i]:
+            max_val = nums[i]
 
-if cnt > 1:
-    print(-1)
-if cnt == 1:
-    print(max_val)
+    nums.pop(nums.index(max_val))
+    if max_val in nums:
+        nums.pop(nums.index(max_val))
+    else:
+        print(max_val)
+        break
+    
+    if len(nums) == 0:
+        print(-1)
+        break
