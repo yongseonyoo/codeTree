@@ -29,5 +29,5 @@ for i in range(n):
         add_val += arr_2d[i][j]
         cnt += 1
         
-mean_val = add_val // cnt
+mean_val = add_val / cnt
 print(f"{mean_val:.1f}", end=' ')
