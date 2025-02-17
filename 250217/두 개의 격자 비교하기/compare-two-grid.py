@@ -15,12 +15,12 @@ arr_2d_3 = [
     for _ in range(n)
 ]
 
-for i in range(m):
-    for j in range(n):
+for i in range(n):
+    for j in range(m):
         if arr_2d_1[i][j] != arr_2d_2[i][j]:
             arr_2d_3[i][j] = 1
 
-for i in range(m):
-    for j in range(n):
+for i in range(n):
+    for j in range(m):
         print(arr_2d_3[i][j], end=' ')
     print()
