@@ -11,7 +11,7 @@ w = input()
 add_val = 0
 cnt = 0
 for a in arr:
-    if w in a:
+    if w == a[0]:
         add_val += len(a)
         cnt += 1
 
