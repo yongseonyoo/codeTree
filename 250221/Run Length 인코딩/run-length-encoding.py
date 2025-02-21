@@ -11,7 +11,7 @@ for i in range(len(sent)):
     elif sent[i] == sent[i-1]:
         cnt += 1
         if i == (len(sent)-1):
-            result += f"{sent[i-1]}{str(cnt)}"
+            result += f"{sent[i]}{str(cnt)}"
     
 
 print(len(result))
