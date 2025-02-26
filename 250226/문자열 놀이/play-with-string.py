@@ -10,4 +10,10 @@ for _ in range(int(n)):
                 word += input_str[int(a)-1]
             else:
                 word += input_str[i]
+        if cnt == '2':
+            if input_str[i] == a:
+                word += b
+            else:
+                word += input_str[i]
+
     print(word)
