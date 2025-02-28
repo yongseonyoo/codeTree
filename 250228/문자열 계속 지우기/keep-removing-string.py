@@ -7,7 +7,7 @@ for i in range(100):
     a = ''.join(a_arr)
     if B in a:
         B_index = a.index(B)
-        a_arr.pop(B_index)
-        a_arr.pop(B_index)
+        for j in range(len(B)):
+            a_arr.pop(B_index)
 
 print(a)
