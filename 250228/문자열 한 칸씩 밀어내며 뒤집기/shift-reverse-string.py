@@ -7,11 +7,12 @@ for i in queries:
     if i == 1:
         input_str = input_str[1:] + input_str[0]
         print(input_str)
-    elif i == 2:
+    if i == 2:
         input_str = input_str[-1] + input_str[:-1]
         print(input_str)
-    elif i == 3:
+    if i == 3:
         sub = ''
         for j in range(len(input_str)-1, -1, -1):
             sub += input_str[j]
-        print(sub)
+        input_str = sub
+        print(input_str)
