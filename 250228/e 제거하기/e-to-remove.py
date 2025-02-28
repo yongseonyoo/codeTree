@@ -1,0 +1,5 @@
+s = input()
+arr = list(s)
+arr.pop(arr.index('e'))
+s = ''.join(arr)
+print(s)
