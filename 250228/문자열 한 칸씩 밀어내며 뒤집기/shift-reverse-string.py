@@ -11,4 +11,7 @@ for i in queries:
         input_str = input_str[-1] + input_str[:-1]
         print(input_str)
     elif i == 3:
-        print(input_str[-1:-len(input_str)-1:-1])
+        sub = ''
+        for j in range(len(input_str)-1, -1, -1):
+            sub += input_str[j]
+        print(sub)
