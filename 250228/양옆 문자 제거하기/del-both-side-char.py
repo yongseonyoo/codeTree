@@ -1,0 +1,7 @@
+s = input()
+n = len(s)
+arr = list(s)
+arr.pop(n-2)
+arr.pop(2)
+s = ''.join(arr)
+print(s)
