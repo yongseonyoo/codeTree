@@ -1,7 +1,7 @@
 s = input()
 n = len(s)
 arr = list(s)
-for i in range(n):
+for i in range(20):
     if len(arr) == 0:
         break
     else:
