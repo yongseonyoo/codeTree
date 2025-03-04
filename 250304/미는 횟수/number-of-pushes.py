@@ -8,7 +8,7 @@ for i in range(len(n)):
     if n == m:
         break
 
-if cnt == 6:
+if cnt == len(n):
     print(-1)
 else:
     print(cnt)
