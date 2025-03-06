@@ -2,7 +2,7 @@ a, b, c = map(int, input().split())
 
 # Please write your code here.
 def min_val(a, b, c):
-    val = 0
+    val = 100
     if a < val:
         val = a
     if b < val:
