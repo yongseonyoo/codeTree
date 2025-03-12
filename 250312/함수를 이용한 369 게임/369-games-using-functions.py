@@ -5,11 +5,12 @@ trg = [3, 6, 9]
 
 cnt = 0
 for i in range(a, b+1):
-    n = i // 10
-    m = i - n * 10
+    n = list(str(i))
     if i % 3 == 0:
         cnt += 1
-    elif n in trg or m in trg:
-        cnt += 1
+    else:
+        for j in n:
+            if int(j) in trg:
+                cnt += 1
 
 print(cnt)
