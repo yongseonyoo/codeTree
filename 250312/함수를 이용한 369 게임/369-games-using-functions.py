@@ -1,7 +1,7 @@
 a, b = map(int, input().split())
 
 # Please write your code here.
-trg = [3, 6, 9]
+trg = ['3', '6', '9']
 
 cnt = 0
 for i in range(a, b+1):
@@ -10,7 +10,7 @@ for i in range(a, b+1):
         cnt += 1
     else:
         for j in n:
-            if int(j) in trg:
+            if j in trg:
                 cnt += 1
 
 print(cnt)
