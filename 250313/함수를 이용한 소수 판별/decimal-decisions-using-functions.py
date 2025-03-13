@@ -10,4 +10,4 @@ for i in range(a, b+1):
     if cnt == 0:
         add_val += i
 
-    print(add_val)
+print(add_val)
