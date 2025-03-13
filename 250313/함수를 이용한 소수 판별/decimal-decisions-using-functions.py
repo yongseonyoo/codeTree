@@ -9,8 +9,5 @@ for i in range(a, b+1):
             cnt += 1
     if cnt == 0:
         add_val += i
-        
-if a == 1 and b == 1:
-    print(1)
-else:
+
     print(add_val)
