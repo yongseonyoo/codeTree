@@ -12,7 +12,7 @@ def formula(a, o, c):
         val = a - c
         print(f"{a} {o} {c} = {val}")
     elif o == '/':
-        val = a / c
+        val = int(a / c)
         print(f"{a} {o} {c} = {val}")
     elif o == '*':
         val = a * c
