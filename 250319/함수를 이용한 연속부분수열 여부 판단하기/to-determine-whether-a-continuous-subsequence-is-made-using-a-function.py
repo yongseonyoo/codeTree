@@ -3,6 +3,7 @@ a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
 # Please write your code here.
+result = []
 for i in range(n1):
     if a[i] == b[0]:
         cnt = 0
@@ -10,9 +11,13 @@ for i in range(n1):
             if a[i+j] == b[j]:
                 cnt += 1
         if cnt == n2:
-            print('Yes')
+            result.append(1)
         else:
-            print('No')
+            result.append(0)
     else:
-        print('No')
-            
+        result.append(0)
+    
+if 1 in result:
+    print('Yes')
+else:
+    print('No')
