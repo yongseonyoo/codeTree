@@ -13,4 +13,6 @@ for i in range(n1):
             print('Yes')
         else:
             print('No')
+    else:
+        print('No')
             
