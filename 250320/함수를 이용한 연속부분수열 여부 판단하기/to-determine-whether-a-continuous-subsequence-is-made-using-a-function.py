@@ -3,7 +3,7 @@ a = list(map(int, input().split()))
 b = list(map(int, input().split()))
 
 # Please write your code here.
-if a.index(b[0]) == True:
+if b[0] in a:
     cnt = 0
     for i in range(a.index(b[0]), a.index(b[0])+n2):
         if a[i] == b[i-a.index(b[0])]:
