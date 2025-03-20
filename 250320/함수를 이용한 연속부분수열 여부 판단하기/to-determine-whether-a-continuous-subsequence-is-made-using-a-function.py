@@ -14,7 +14,7 @@ if b[0] in a:
             print("Yes")
         else:
             print("No")
-    elif len(a) == len(b):
+    elif len(a) == len(b) and a[0] == b[0]:
         print("Yes")
     else:
         print("No")
