@@ -20,7 +20,7 @@ if M <= 7:
             if leap_year == True:
                 if D <= 29:
                     day = True
-            elif leap_year == False 
+            elif leap_year == False:
                 if D <= 28:
                     day = True
         if D <= 30:
