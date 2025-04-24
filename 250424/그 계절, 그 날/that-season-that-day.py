@@ -7,6 +7,8 @@ if Y % 4 == 0:
     if Y % 100 == 0:
         if Y % 400 == 0:
             leap_year = True
+        else:
+            leap_year = False
     else:
         leap_year = True
 
