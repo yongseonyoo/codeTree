@@ -14,6 +14,7 @@ def hamsu(text, pattern):
                         cnt += 1
                 if cnt == len(pattern):
                     print(i)
+                    break
     else:
         print(-1)
 
