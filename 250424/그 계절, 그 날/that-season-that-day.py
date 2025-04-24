@@ -27,7 +27,6 @@ elif M > 7 and M <= 12:
             day = True
 
 if day == True:
-    print(True)
     if M >= 3 and M <= 5:
         print('Spring')
     elif M >= 6 and M <= 8:
