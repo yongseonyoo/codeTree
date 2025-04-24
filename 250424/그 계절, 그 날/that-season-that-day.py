@@ -17,10 +17,12 @@ if M <= 7:
             day = True
     else:
         if M == 2:
-            if leap_year == True and D <= 29:
-                day = True
-            elif leap_year == False and D <= 28:
-                day = True
+            if leap_year == True:
+                if D <= 29:
+                    day = True
+            elif leap_year == False 
+                if D <= 28:
+                    day = True
         if D <= 30:
             day = True
 elif M > 7 and M <= 12:
