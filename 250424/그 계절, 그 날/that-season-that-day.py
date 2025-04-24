@@ -16,6 +16,8 @@ if M <= 7:
         if D <= 31:
             day = True
     else:
+        if M == 2 and leap_year == True and D <= 29:
+            day = True
         if D <= 30:
             day = True
 elif M > 7 and M <= 12:
@@ -26,17 +28,15 @@ elif M > 7 and M <= 12:
         if D <= 30:
             day = True
 
-if leap_year == True:
-    if day == True:
-        if M >= 3 and M <= 5:
-            print('Spring')
-        elif M >= 6 and M <= 8:
-            print('Summer')
-        elif M >= 9 and M <= 11:
-            print('Fall')
-        else:
-            print('Winter')
+
+if day == True:
+    if M >= 3 and M <= 5:
+        print('Spring')
+    elif M >= 6 and M <= 8:
+        print('Summer')
+    elif M >= 9 and M <= 11:
+        print('Fall')
     else:
-        print(-1)
+        print('Winter')
 else:
     print(-1)
