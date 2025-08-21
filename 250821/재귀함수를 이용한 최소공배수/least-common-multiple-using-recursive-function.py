@@ -13,7 +13,9 @@ def gcd(a, b):
 # lcm(a,b)=(a*b)//gcd(a,b)
 
 def f(arr):
-    if len(arr) == 2:
+    if len(arr) == 1:
+        return arr[0]
+    elif len(arr) == 2:
         lcm = (arr[-2]*arr[-1])//gcd(arr[-2],arr[-1])
         return lcm
     else:
