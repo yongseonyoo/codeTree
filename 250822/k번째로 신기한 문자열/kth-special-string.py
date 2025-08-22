@@ -6,7 +6,7 @@ str = [input() for _ in range(n)]
 
 arr = sorted(str)
 for i in range(n):
-    if str[i][:2] != 'ap':
+    if str[i][:len(t)] != t:
         arr.remove(str[i])
 
 print(arr[k-1])
